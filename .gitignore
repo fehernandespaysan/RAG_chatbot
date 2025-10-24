@@ -206,8 +206,7 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# Ai agents
-agent.md
+# Ai agents (keeping agent.md - it's our dev standards)
 agent.py
 agent.sh
 agent.json
@@ -218,3 +217,24 @@ agent.jsonl.gz
 agent.jsonl.bz2
 agent.jsonl.xz
 agent.jsonl.lzma
+
+# Fifi.ai Project-Specific
+# Vector database files
+*.faiss
+*.index
+*.pkl
+
+# Data directory
+data/
+backups/
+
+# Generated embeddings
+embeddings/
+
+# Application logs
+logs/
+*.log.*
+
+# Temporary files
+tmp/
+temp/
