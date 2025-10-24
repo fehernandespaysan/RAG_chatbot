@@ -1,26 +1,92 @@
-# Fifi.ai - Fun Interactive Forge for Insights
+# 🤖 RAG Chatbot Template
 
-**An open-source RAG (Retrieval-Augmented Generation) system for learning AI Engineering**
+**Production-ready RAG chatbot you can customize in 5 minutes**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
+> 💡 **This is a template!** Clone it, add your blogs, customize the branding, and deploy your own AI chatbot.
+
 ---
 
-## 🎯 What is Fifi.ai?
+## ✨ Features
 
-Fifi.ai is a **production-grade RAG system** that lets you build an AI chatbot powered by your own blog content. It's designed as a learning platform to teach AI engineering concepts through hands-on implementation.
+- 🚀 **5-Minute Setup** - Clone → Configure → Deploy
+- 🎨 **Easy Branding** - Customize name, colors, messages via `.env`
+- 📝 **Just Add Content** - Drop `.md` files in `blogs/` folder
+- 🤖 **Production RAG** - FAISS vector search + OpenAI embeddings
+- 💬 **Dual Interface** - Streamlit web UI + CLI chatbot
+- 🔒 **Security Built-In** - API key sanitization, input validation
+- 📊 **Observability** - Structured logging, metrics tracking
+- ✅ **127 Tests Included** - Production-ready code quality
+- 📱 **Deploy Anywhere** - Streamlit Cloud (free), Docker, Vercel
 
-### Key Features
+---
 
-- 🤖 **Interactive AI Chatbot** - Query your blog content through an AI-powered assistant
-- 📚 **Blog Content RAG** - Automatically indexes and retrieves relevant information from your blog posts
-- 🔒 **Security-First** - Built with production security best practices from day one
-- 📊 **Full Observability** - Comprehensive logging, metrics, and monitoring
-- 🧪 **Well-Tested** - Extensive test coverage with best practices
-- 🚀 **Production-Ready** - Designed for deployment, not just demos
-- 📖 **Educational** - Learn by building a real AI system
+## 🚀 Quick Start
+
+### 1. Clone & Install (2 min)
+
+```bash
+git clone https://github.com/yourusername/rag-chatbot-template
+cd rag-chatbot-template
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+### 2. Configure (1 min)
+
+```bash
+# Copy .env.example to .env
+cp .env.example .env
+
+# Edit .env - add your OpenAI API key
+# Also customize: APP_NAME, WELCOME_MESSAGE, EXAMPLE_QUESTIONS
+```
+
+### 3. Add Your Content (1 min)
+
+```bash
+# Delete example blogs
+rm blogs/example-*.md
+
+# Add your own markdown files
+cp your-blog.md blogs/
+```
+
+### 4. Run! (1 min)
+
+```bash
+# Web UI
+streamlit run streamlit_app.py
+
+# Or CLI
+python chat.py
+```
+
+Visit `http://localhost:8501` - Your branded chatbot is live!
+
+---
+
+## 📚 What You Get
+
+- **Production RAG System** - Not a toy demo, real production code
+- **Full Test Suite** - 127 tests, 78% coverage
+- **Example Blog Posts** - 3 different formats to guide you
+- **Comprehensive Docs** - Setup, customization, deployment guides
+- **Best Practices** - Security, logging, error handling built-in
+
+---
+
+## 📖 Documentation
+
+- **[CUSTOMIZATION.md](CUSTOMIZATION.md)** - How to brand and customize
+- **[BLOG_FORMAT.md](BLOG_FORMAT.md)** - How to write blog posts
+- **[DEPLOYMENT.md](DEPLOYMENT.md)** - Deploy to Streamlit Cloud (free!)
+- **[ROADMAP.md](ROADMAP.md)** - Project roadmap and future plans
+- **[CLAUDE.md](CLAUDE.md)** - Development guide for contributors
 
 ---
 

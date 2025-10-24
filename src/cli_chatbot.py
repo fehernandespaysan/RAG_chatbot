@@ -114,11 +114,10 @@ class CLIChatbot:
 
     def print_welcome(self):
         """Print welcome message."""
-        welcome_text = """
-# Welcome to Fifi.ai! 🤖
+        welcome_text = f"""
+# Welcome to {self.config.app_name}! 🤖
 
-I'm your AI assistant powered by RAG (Retrieval-Augmented Generation).
-I can answer questions about AI engineering, RAG systems, vector databases, and more!
+{self.config.welcome_message}
 
 **Available Commands:**
 - `/help`     - Show help
@@ -128,15 +127,15 @@ I can answer questions about AI engineering, RAG systems, vector databases, and 
 - `/exit`     - Exit the chatbot
 
 **Tips:**
-- Ask me anything about AI, RAG, embeddings, or security
-- I'll provide answers based on my knowledge base
-- My responses include source citations
+- Ask me anything about the topics in my knowledge base
+- I'll provide answers with source citations
+- Use commands to manage your session
 
 Type your question and press Enter to begin!
 """
         panel = Panel(
             Markdown(welcome_text),
-            title="[bold cyan]Fifi.ai RAG Chatbot[/bold cyan]",
+            title=f"[bold cyan]{self.config.app_name} RAG Chatbot[/bold cyan]",
             border_style="cyan",
         )
         self.console.print(panel)
@@ -311,7 +310,8 @@ Type your question and press Enter to begin!
             self.console.print()
 
             # Stream response
-            self.console.print("[bold green]🤖 Fifi:[/bold green] ", end="")
+            bot_name = self.config.app_name.split()[0]  # Use first word of app name
+            self.console.print(f"[bold green]🤖 {bot_name}:[/bold green] ", end="")
 
             response_text = []
             for chunk in self.rag_engine.stream_query(query):
@@ -386,7 +386,7 @@ Type your question and press Enter to begin!
                 f"{stats['total_tokens_used']:,} tokens used[/dim]"
             )
 
-        self.console.print("\n[bold cyan]👋 Thanks for using Fifi.ai! Goodbye![/bold cyan]\n")
+        self.console.print(f"\n[bold cyan]👋 Thanks for using {self.config.app_name}! Goodbye![/bold cyan]\n")
 
 
 def main():

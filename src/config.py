@@ -77,6 +77,38 @@ class Config(BaseSettings):
     debug: bool = Field(default=True, description="Enable debug mode")
 
     # =============================================================================
+    # Branding & Customization
+    # =============================================================================
+    app_tagline: str = Field(
+        default="Your AI Engineering Assistant",
+        description="Application tagline/subtitle"
+    )
+    welcome_title: str = Field(
+        default="Welcome to Fifi",
+        description="Welcome screen title"
+    )
+    welcome_message: str = Field(
+        default="Your AI assistant powered by RAG. Ask me anything about AI, machine learning, embeddings, or software engineering.",
+        description="Welcome screen message"
+    )
+    example_question_1: str = Field(
+        default="What is RAG and how does it work?",
+        description="First example question"
+    )
+    example_question_2: str = Field(
+        default="How do vector databases improve search?",
+        description="Second example question"
+    )
+    example_question_3: str = Field(
+        default="Explain embeddings in simple terms",
+        description="Third example question"
+    )
+    example_question_4: str = Field(
+        default="What are best practices for AI security?",
+        description="Fourth example question"
+    )
+
+    # =============================================================================
     # OpenAI API Configuration
     # =============================================================================
     openai_api_key: str = Field(

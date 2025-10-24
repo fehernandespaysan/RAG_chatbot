@@ -21,6 +21,7 @@ from typing import List
 import streamlit as st
 
 from src.blog_loader import BlogLoader
+from src.config import get_config
 from src.embeddings_manager import EmbeddingsManager
 from src.logger import setup_logging
 from src.rag_engine import ConversationMessage, RAGEngine
@@ -28,9 +29,12 @@ from src.rag_engine import ConversationMessage, RAGEngine
 # Setup logging
 setup_logging(log_format="json")
 
+# Get config for branding
+config = get_config()
+
 # Page configuration
 st.set_page_config(
-    page_title="Fifi - AI Engineering Assistant",
+    page_title=f"{config.app_name} - RAG Chatbot",
     page_icon="✨",
     layout="wide",
     initial_sidebar_state="expanded",  # Always show sidebar on load
@@ -598,25 +602,26 @@ def display_sidebar(rag_engine: RAGEngine):
 
 def display_welcome_screen():
     """Display welcome screen with example questions."""
-    st.markdown("""
+    config = get_config()
+
+    st.markdown(f"""
     <div class="welcome-header">
-        <h1 class="welcome-title">Welcome to Fifi</h1>
+        <h1 class="welcome-title">{config.welcome_title}</h1>
         <p class="welcome-subtitle">
-            Your AI Engineering Assistant powered by RAG. Ask me anything about
-            AI, machine learning, embeddings, or software engineering.
+            {config.welcome_message}
         </p>
     </div>
     """, unsafe_allow_html=True)
 
     # Example questions - 2 columns with 2 questions each
     examples_left = [
-        "What is RAG and how does it work?",
-        "How do vector databases improve search?",
+        config.example_question_1,
+        config.example_question_2,
     ]
 
     examples_right = [
-        "Explain embeddings in simple terms",
-        "What are best practices for AI security?",
+        config.example_question_3,
+        config.example_question_4,
     ]
 
     # Create 2-column layout using Streamlit columns
