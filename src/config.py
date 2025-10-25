@@ -1,5 +1,5 @@
 """
-Configuration management for Fifi.ai
+Configuration management for RAG Chatbot Template
 
 This module provides centralized configuration management using Pydantic Settings.
 It supports multiple environments (development, staging, production) and loads
@@ -72,23 +72,23 @@ class Config(BaseSettings):
     # =============================================================================
     # Application Settings
     # =============================================================================
-    app_name: str = Field(default="Fifi.ai", description="Application name")
-    app_version: str = Field(default="0.1.0", description="Application version")
+    app_name: str = Field(default="RAG Chatbot", description="Application name")
+    app_version: str = Field(default="1.0.0", description="Application version")
     debug: bool = Field(default=True, description="Enable debug mode")
 
     # =============================================================================
     # Branding & Customization
     # =============================================================================
     app_tagline: str = Field(
-        default="Your AI Engineering Assistant",
+        default="AI-Powered Knowledge Assistant",
         description="Application tagline/subtitle"
     )
     welcome_title: str = Field(
-        default="Welcome to Fifi",
+        default="Welcome to Your RAG Chatbot",
         description="Welcome screen title"
     )
     welcome_message: str = Field(
-        default="Your AI assistant powered by RAG. Ask me anything about AI, machine learning, embeddings, or software engineering.",
+        default="Ask me anything about the content in the knowledge base. I use RAG (Retrieval-Augmented Generation) to provide accurate, source-based answers.",
         description="Welcome screen message"
     )
     example_question_1: str = Field(

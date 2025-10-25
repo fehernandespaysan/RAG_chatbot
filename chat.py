@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Fifi.ai CLI Chatbot Entry Point
+RAG Chatbot CLI Entry Point
 
 Quick launcher for the interactive RAG chatbot.
 

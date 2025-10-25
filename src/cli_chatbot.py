@@ -1,5 +1,5 @@
 """
-CLI Chatbot for Fifi.ai
+CLI Chatbot for RAG Chatbot Template
 
 Interactive command-line chatbot using RAG engine.
 Features rich terminal UI, streaming responses, and conversation management.

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Setup validation script for Fifi.ai
+Setup validation script for RAG Chatbot Template
 
 This script validates the environment setup, checks dependencies,
 tests API connectivity, and ensures everything is ready for development.
@@ -43,7 +43,7 @@ class SetupValidator:
             bool: True if all critical checks passed
         """
         print("\n" + "=" * 70)
-        print("  Fifi.ai Setup Validation")
+        print("  RAG Chatbot Setup Validation")
         print("=" * 70 + "\n")
 
         # Run all checks

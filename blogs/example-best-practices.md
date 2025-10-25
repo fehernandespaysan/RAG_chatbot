@@ -1,38 +1,7 @@
-<!--
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📝 EXAMPLE BLOG POST - BEST PRACTICES / LIST FORMAT
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-This is an EXAMPLE blog post to demonstrate best practices format.
-
-🗑️  DELETE THIS FILE and replace with your own content.
-
-📋 TEMPLATE INSTRUCTIONS:
-1. Use this format for actionable advice and guidelines
-2. Structure: Intro → Problem → Best Practices (numbered/bulleted) → Summary
-3. Each practice should have: What + Why + How
-4. Include anti-patterns (what NOT to do)
-
-✅ GOOD FOR:
-- Best practices guides
-- Tips & tricks articles
-- Checklists
-- Security guidelines
-- Performance optimization guides
-
-💡 TIPS:
-- Be specific and actionable
-- Include code examples
-- Explain the "why" behind each practice
-- Prioritize by importance
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
--->
-
 ---
 title: "Example: Security Best Practices for AI"
 date: 2025-10-23
-tags: security, ai, best-practices, production
+tags: [security, ai, best-practices, production]
 author: Your Name Here
 ---
 

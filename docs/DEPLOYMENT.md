@@ -1,4 +1,4 @@
-# Fifi.ai Deployment Guide
+# RAG Chatbot Deployment Guide
 
 **Last Updated:** October 24, 2025
 **Target Platform:** Streamlit Cloud (Free Tier)
@@ -112,7 +112,7 @@
 
 2. **Create New App**
    - Click "New app"
-   - Select your repository: `yourusername/fifi.ai`
+   - Select your repository: `yourusername/rag-chatbot-template`
    - Branch: `main`
    - Main file path: `streamlit_app.py`
    - Click "Deploy"
@@ -168,7 +168,7 @@
    ```markdown
    ## 🌐 Live Demo
 
-   Try Fifi.ai live: [https://your-app.streamlit.app](https://your-app.streamlit.app)
+   Try the RAG Chatbot live: [https://your-app.streamlit.app](https://your-app.streamlit.app)
    ```
 
 3. **Share with initial users**

@@ -1,6 +1,6 @@
-# Fifi.ai Development Agent Guidelines
+# RAG Chatbot Template Development Agent Guidelines
 
-This document outlines the high standards we follow when building Fifi.ai. Claude Code should use these guidelines to ensure all code maintains production-quality standards for security, monitoring, and code quality.
+This document outlines the high standards we follow when building the RAG Chatbot Template. Claude Code should use these guidelines to ensure all code maintains production-quality standards for security, monitoring, and code quality.
 
 ---
 
@@ -410,4 +410,4 @@ When reviewing code, verify:
 ---
 
 **Last Updated**: October 2025  
-**Project**: Fifi.ai - Fun Interactive Forge for Insights
+**Project**: RAG Chatbot Template - Production-Ready RAG System Template

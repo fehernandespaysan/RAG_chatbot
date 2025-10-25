@@ -1,5 +1,5 @@
 """
-Fifi.ai Streamlit Web Interface
+RAG Chatbot Streamlit Web Interface
 
 Beautiful web UI for the RAG chatbot using Streamlit.
 
@@ -472,8 +472,6 @@ def initialize_rag_engine():
         index_loaded = embeddings_manager.load()
 
         if not index_loaded:
-            st.warning("⚠️ No existing index found. Building index from blogs...")
-
             # Load blogs
             loader = BlogLoader()
             blogs = loader.load_all_blogs()
@@ -482,12 +480,9 @@ def initialize_rag_engine():
                 st.error("❌ No blog posts found. Please add blog posts to the blogs/ directory.")
                 return None
 
-            # Generate embeddings
-            with st.spinner(f"Processing {len(blogs)} blog posts..."):
-                embeddings_manager.add_documents(blogs)
-                embeddings_manager.save()
-
-            st.success("✅ Index built and saved!")
+            # Generate embeddings silently (logs are still recorded)
+            embeddings_manager.add_documents(blogs)
+            embeddings_manager.save()
 
         # Initialize RAG engine
         rag_engine = RAGEngine(embeddings_manager=embeddings_manager)
@@ -523,12 +518,12 @@ def initialize_session_state():
 def display_sidebar(rag_engine: RAGEngine):
     """Display minimal modern sidebar."""
     # Logo and branding
-    st.sidebar.markdown("""
+    st.sidebar.markdown(f"""
     <div class="sidebar-logo">
         <div class="logo-box">✨</div>
         <div class="logo-text">
-            <div class="logo-title">Fifi</div>
-            <div class="logo-subtitle">AI Engineering Assistant</div>
+            <div class="logo-title">{config.app_name}</div>
+            <div class="logo-subtitle">{config.app_tagline}</div>
         </div>
     </div>
     """, unsafe_allow_html=True)

@@ -1,7 +1,7 @@
 #!/bin/bash
-# Launcher script for Fifi.ai Streamlit Web UI
+# Launcher script for RAG Chatbot Streamlit Web UI
 
-echo "🚀 Starting Fifi.ai Web Interface..."
+echo "🚀 Starting RAG Chatbot Web Interface..."
 echo ""
 
 # Activate virtual environment if it exists

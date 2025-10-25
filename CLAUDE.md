@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **This is a TEMPLATE PROJECT** designed for developers to clone and customize as their own RAG chatbot.
 
-This is a production-grade RAG (Retrieval-Augmented Generation) system that enables querying blog content through an AI-powered chatbot using OpenAI's API and FAISS vector database.
+This is a production-grade RAG (Retrieval-Augmented Generation) system template that enables querying blog content through an AI-powered chatbot using OpenAI's API and FAISS vector database.
 
 **Key Design Principles:**
 - **Template-First**: Easy for others to clone and brand
@@ -103,7 +103,7 @@ bandit -r src/
 
 ### System Design
 
-Fifi.ai follows a layered architecture:
+The RAG Chatbot Template follows a layered architecture:
 
 1. **Data Layer** (`src/blog_loader.py`)
    - Loads markdown blog posts from `blogs/` directory
@@ -275,7 +275,7 @@ All code must follow `agent.md` guidelines:
 
 ## Project Status & Roadmap
 
-See `ROADMAP.md` for detailed timeline. Current phase:
+See [docs/ROADMAP.md](docs/ROADMAP.md) for detailed timeline. Current phase:
 
 ✅ **Completed**:
 - Phase 0: Foundation (config, logging)

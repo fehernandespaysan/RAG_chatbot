@@ -1,5 +1,5 @@
 """
-Blog loader for Fifi.ai
+Blog loader for RAG Chatbot Template
 
 Loads and parses markdown blog posts with YAML frontmatter.
 Validates structure and handles errors gracefully.

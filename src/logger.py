@@ -1,5 +1,5 @@
 """
-Structured logging setup for Fifi.ai
+Structured logging setup for RAG Chatbot Template
 
 This module provides centralized logging with structured JSON output,
 correlation IDs for request tracking, and security-first practices.

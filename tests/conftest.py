@@ -1,5 +1,5 @@
 """
-Pytest configuration and shared fixtures for Fifi.ai tests.
+Pytest configuration and shared fixtures for RAG Chatbot Template tests.
 """
 
 import os
@@ -87,7 +87,7 @@ tags: test, python, rag
 
 # Introduction
 
-This is a test blog post for Fifi.ai.
+This is a test blog post for the RAG chatbot.
 
 ## Section 1
 

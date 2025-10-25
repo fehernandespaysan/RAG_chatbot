@@ -56,7 +56,7 @@ def print_response(response, show_context=False):
 
 def main():
     """Run the RAG test."""
-    print_section("Fifi.ai RAG Engine Test")
+    print_section("RAG Chatbot RAG Engine Test")
 
     # Step 1: Check if index exists
     print("📦 Step 1: Checking for existing index...")

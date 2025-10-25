@@ -1,5 +1,5 @@
 """
-Integration tests for Fifi.ai
+Integration tests for RAG Chatbot Template
 
 Tests the complete RAG pipeline from blog loading to response generation.
 These tests use mocked APIs to avoid costs but test real integration points.

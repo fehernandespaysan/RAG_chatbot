@@ -24,7 +24,7 @@ class TestConfigModel:
             reset_config()
             config = Config()
             assert config.openai_api_key.startswith("sk-")
-            assert config.app_name == "Fifi.ai"
+            assert config.app_name == "RAG Chatbot"
 
     def test_config_fails_with_invalid_api_key(self):
         """Test that config validation fails with invalid API key."""
@@ -64,8 +64,8 @@ class TestConfigModel:
             reset_config()
             config = Config()
 
-            assert config.app_name == "Fifi.ai"
-            assert config.app_version == "0.1.0"
+            assert config.app_name == "RAG Chatbot"
+            assert config.app_version == "1.0.0"
             assert config.environment == Environment.DEVELOPMENT
             assert config.openai_model == "gpt-4o-mini"
             assert config.openai_embedding_model == "text-embedding-3-small"
@@ -227,7 +227,7 @@ class TestConfigHelperMethods:
             assert "***" in safe_dict["secret_key"]
 
             # Check that non-sensitive fields are not masked
-            assert safe_dict["app_name"] == "Fifi.ai"
+            assert safe_dict["app_name"] == "RAG Chatbot"
             assert safe_dict["openai_model"] == "gpt-4o-mini"
 
     def test_create_data_directories(self, tmp_path):

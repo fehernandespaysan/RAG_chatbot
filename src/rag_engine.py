@@ -1,5 +1,5 @@
 """
-RAG Query Engine for Fifi.ai
+RAG Query Engine for RAG Chatbot Template
 
 Implements Retrieval-Augmented Generation using:
 - EmbeddingsManager for semantic search
@@ -181,9 +181,9 @@ class RAGEngine:
 
     def _get_default_system_prompt(self) -> str:
         """Get the default system prompt for the RAG assistant."""
-        return """You are Fifi, a helpful AI assistant that answers questions about AI engineering, RAG systems, and related topics.
+        return """You are a helpful AI assistant that answers questions based on a curated knowledge base.
 
-Your knowledge comes from a curated collection of blog posts and articles. Always:
+Your knowledge comes from a curated collection of documents and articles. Always:
 - Provide accurate, helpful answers based on the given context
 - Cite your sources when referencing specific information
 - Admit when you don't know something or when the context doesn't contain the answer

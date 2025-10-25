@@ -21,7 +21,7 @@ setup_logging(log_format="text")
 def main():
     """Load blogs and display statistics."""
     print("\n" + "=" * 70)
-    print("  Fifi.ai Blog Loader Test")
+    print("  RAG Chatbot Blog Loader Test")
     print("=" * 70 + "\n")
 
     # Initialize loader

@@ -1,6 +1,6 @@
-# Fifi.ai Project Roadmap
+# RAG Chatbot Template Project Roadmap
 
-**Fifi.ai – Fun Interactive Forge for Insights**
+**Production-Ready RAG System Template**
 
 An open-source RAG system for learning AI Engineering.
 
@@ -18,7 +18,7 @@ Build a production-grade AI learning platform that:
 ## 📊 Project Structure
 
 ```
-fifis-ai/
+rag-chatbot-template/
 ├── README.md                    # Project overview
 ├── ROADMAP.md                   # This file
 ├── LICENSE                      # MIT License
@@ -85,7 +85,7 @@ fifis-ai/
 
 **Use Claude Code:**
 ```
-Set up the project structure for Fifi.ai following agent.md standards.
+Set up the project structure for the RAG Chatbot Template following agent.md standards.
 Create:
 - Directory structure (src/, tests/, blogs/, docs/)
 - requirements.txt with specified dependencies
@@ -964,10 +964,10 @@ Retention: Permanent
 #### Vector Database Restore
 ```bash
 # 1. List available backups
-aws s3 ls s3://fifi-backups/faiss/
+aws s3 ls s3://rag-chatbot-backups/faiss/
 
 # 2. Download specific backup
-aws s3 cp s3://fifi-backups/faiss/2025-10-23.tar.gz ./
+aws s3 cp s3://rag-chatbot-backups/faiss/2025-10-23.tar.gz ./
 
 # 3. Extract and verify
 tar -xzf 2025-10-23.tar.gz
@@ -1127,7 +1127,7 @@ pylint>=3.0.0              # Linting
 - Deploy UI to Streamlit Cloud
 
 ### Production
-- Domain: `fifis.ai`
+- Domain: `your-domain.com` (customize as needed)
 - API: Vercel (free tier sufficient)
 - UI: Streamlit Cloud (free tier sufficient)
 - Database: FAISS (local) or Pinecone (scalable)
@@ -1902,7 +1902,7 @@ vercel rollback <deployment-url>
 
 #### Hard Launch (Week 8)
 - [ ] **Product Hunt:** Submit with great description, demo video
-- [ ] **Hacker News:** Post "Show HN: Fifi.ai" with compelling story
+- [ ] **Hacker News:** Post "Show HN: Your RAG Chatbot" with compelling story
 - [ ] **Dev.to:** Write detailed launch post
 - [ ] **LinkedIn:** Professional network announcement
 - [ ] **Email list:** Send to subscribers
@@ -1919,8 +1919,8 @@ vercel rollback <deployment-url>
 #### Growth Tactics
 - [ ] **Blog consistently:** Weekly posts on AI/RAG topics
 - [ ] **Guest appearances:** Podcasts, YouTube channels
-- [ ] **Case studies:** How users are using Fifi.ai
-- [ ] **Comparisons:** Fifi.ai vs alternatives (fair, objective)
+- [ ] **Case studies:** How users are customizing the template
+- [ ] **Comparisons:** RAG Chatbot Template vs alternatives (fair, objective)
 - [ ] **Tutorials:** Step-by-step guides for common use cases
 
 #### Partnerships
@@ -1956,7 +1956,7 @@ vercel rollback <deployment-url>
 - **Inclusive:** Welcoming to all skill levels
 
 #### Visual Identity
-- **Logo:** AI avatar (Fifi)
+- **Logo:** AI chatbot icon (customizable)
 - **Colors:** Professional but friendly palette
 - **Typography:** Readable, modern fonts
 - **Style:** Clean, minimalist, focused on content
@@ -2036,7 +2036,7 @@ By completing this project, you'll have:
 ---
 
 **Last Updated:** October 24, 2025
-**Project:** Fifi.ai – Fun Interactive Forge for Insights
+**Project:** RAG Chatbot Template - Production-Ready RAG System Template
 **Status:** ✅ Core Platform Complete (Phases 0-4, 6)
 **Current Focus:** Content Creation & Deployment Preparation
 **Next:** Create real blog content, then deploy to Streamlit Cloud

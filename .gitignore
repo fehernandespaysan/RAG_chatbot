@@ -218,7 +218,7 @@ agent.jsonl.bz2
 agent.jsonl.xz
 agent.jsonl.lzma
 
-# Fifi.ai Project-Specific
+# RAG Chatbot Template Project-Specific
 # Vector database files
 *.faiss
 *.index

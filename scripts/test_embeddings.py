@@ -53,7 +53,7 @@ def print_search_result(result, rank: int):
 
 def main():
     """Run the embeddings test."""
-    print_section("Fifi.ai Embeddings Test")
+    print_section("RAG Chatbot Embeddings Test")
 
     # Step 1: Load blogs
     print("📚 Step 1: Loading blog posts...")

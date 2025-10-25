@@ -1,37 +1,7 @@
-<!--
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📝 EXAMPLE BLOG POST - CONCEPT EXPLANATION FORMAT
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-This is an EXAMPLE blog post to demonstrate explaining complex concepts.
-
-🗑️  DELETE THIS FILE and replace with your own content.
-
-📋 TEMPLATE INSTRUCTIONS:
-1. Use this format for explaining technical concepts
-2. Structure: What → Why → How → Examples → Comparison → Conclusion
-3. Break down complex ideas into digestible sections
-4. Use analogies to make concepts accessible
-
-✅ GOOD FOR:
-- Technical explainers
-- Deep dives into specific topics
-- Comparisons (X vs Y)
-- Architecture overviews
-
-💡 TIPS:
-- Start with simple definitions
-- Build complexity gradually
-- Use diagrams/code examples
-- End with practical applications
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
--->
-
 ---
 title: "Example: Vector Databases Explained"
 date: 2025-10-20
-tags: vector-database, faiss, pinecone, embeddings
+tags: [vector-database, faiss, pinecone, embeddings]
 author: Your Name Here
 ---
 

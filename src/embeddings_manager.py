@@ -1,5 +1,5 @@
 """
-Embeddings Manager for Fifi.ai
+Embeddings Manager for RAG Chatbot Template
 
 Handles text chunking, embedding generation, and vector storage using FAISS.
 

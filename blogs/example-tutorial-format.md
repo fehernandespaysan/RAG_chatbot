@@ -1,38 +1,7 @@
-<!--
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📝 EXAMPLE BLOG POST - TUTORIAL FORMAT
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-This is an EXAMPLE blog post to demonstrate the tutorial format.
-
-🗑️  DELETE THIS FILE and replace with your own content.
-
-📋 TEMPLATE INSTRUCTIONS:
-1. Keep the frontmatter format below (between the --- markers)
-2. Update: title, date, tags, author to match YOUR content
-3. Use markdown formatting (headers, lists, code blocks, etc.)
-4. Structure: Intro → How It Works → Why It Matters → Examples → Conclusion
-
-✅ REQUIRED FIELDS:
-- title:  Your post title (keep it clear and descriptive)
-- date:   YYYY-MM-DD format (e.g., 2025-10-24)
-- author: Your name or your brand name
-- tags:   [tag1, tag2, tag3] (helps with organization)
-
-💡 TIPS:
-- Use clear, descriptive titles
-- Break content into sections with ## headers
-- Include code examples if relevant
-- Add numbered or bulleted lists for clarity
-- Aim for 800-2000 words for good chunking
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
--->
-
 ---
 title: "Example: What is RAG and Why Does It Matter?"
 date: 2025-10-15
-tags: rag, ai, machine-learning, tutorial
+tags: [rag, ai, machine-learning, tutorial]
 author: Your Name Here
 ---
 
@@ -69,7 +38,7 @@ You can use RAG to build AI systems that are experts in specific domains by prov
 - **Customer Support**: Chatbots that can answer questions by referencing your documentation
 - **Research Assistants**: Systems that can search through academic papers and synthesize answers
 - **Code Assistants**: Tools that can reference your codebase to provide accurate coding help
-- **Personal Knowledge Bases**: Systems like Fifi.ai that let you chat with your own content
+- **Personal Knowledge Bases**: Systems that let you chat with your own content through AI
 
 ## Getting Started with RAG
 
